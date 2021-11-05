@@ -35,10 +35,6 @@ jobs:
           pip install google.auth.transport.requests
           
       - name: execute py script # run sj-gobierno.py to get the latest data
-        env: 
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
         run: main.py
           
       - name: commit files
@@ -54,5 +50,5 @@ jobs:
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: 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
           branch: main
