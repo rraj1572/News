@@ -1,4 +1,4 @@
-name: scraper-san-juan-gobierno
+name: News
 
 on:
   schedule:
@@ -45,6 +45,9 @@ jobs:
         run: |
           git config --local user.email "rishabhpao2012@gmail.com"
           git config --local user.name "rraj1572"
+          git clone https://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@github.com/rraj1572/News
+          cd News/
+          cd code_samples
           git add -A
           git commit -m "update data" -a
           
