@@ -17,8 +17,11 @@ jobs:
                        git config --global user.email "rishabhpao2012@gmail.com"
                        git clone https://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@github.com/rraj1572/News
                        cd News/
+                       git pull https://github.com/rraj1572/News || echo "No need to update repo"
                        cd code_samples/
                        chmod 755 *
                        sudo apt-get install expect -y
                        ./script.exp
+                       git commit -m "Playlist has been updated."
+                       git push
                        exit
