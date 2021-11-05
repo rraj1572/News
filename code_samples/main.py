@@ -1,2 +1,0 @@
-import english
-import hindi
