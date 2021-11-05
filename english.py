@@ -43,7 +43,6 @@ def eng():
 # In[31]:
 
 
-
         News1 = data ['articles'][0]['title']
         print(News1)
         News2 = data ['articles'][1]['title']
