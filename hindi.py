@@ -69,7 +69,7 @@ clip2 = ImageClip("hin.png").set_duration(audio2.duration)
 # Set the audio of the clip
 clip2 = clip2.set_audio(audio2)
 # Export the clip
-clip2.write_videofile("newshin.mp4", fps=24)
+clip2.write_videofile("/home/runner/work/News/News/newshin.mp4", fps=24)
 
 
 
@@ -97,7 +97,7 @@ request_body = {
     'notifySubscribers': True
 }
 
-mediaFile = MediaFileUpload('newshin.MP4')
+mediaFile = MediaFileUpload('/home/runner/work/News/News/newshin.MP4')
 
 response_upload = service.videos().insert(
     part='snippet,status',
