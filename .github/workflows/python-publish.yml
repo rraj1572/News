@@ -1,0 +1,24 @@
+name: News
+on:
+ schedule:
+   - cron: "00 21  * * *"
+ workflow_dispatch:
+  inputs:
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Daily Loop
+      run: |
+                       git config --global user.name "rraj1572"
+                       git config --global user.email "rishabhpao2012@gmail.com"
+                       git clone https://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@github.com/rraj1572/News
+                       cd News/
+                       cd code_samples/
+                       chmod 755 *
+                       sudo apt-get install expect -y
+                       ./script.exp
+                       exit
