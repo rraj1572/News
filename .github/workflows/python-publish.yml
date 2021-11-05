@@ -31,7 +31,6 @@ jobs:
           pip install datetime
           pip install gtts
           pip install moviepy
-          pip install os
           pip install googleapiclient.http
           pip install pickle
           pip install google_auth_oauthlib.flow
