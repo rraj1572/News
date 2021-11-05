@@ -44,3 +44,4 @@ if {$force_conservative} {
 
 set timeout 120
 spawn python3 main.py
+expexct eof
