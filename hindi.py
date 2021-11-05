@@ -97,7 +97,7 @@ request_body = {
     'notifySubscribers': True
 }
 
-mediaFile = MediaFileUpload('/home/runner/work/News/News/newshin.MP4')
+mediaFile = MediaFileUpload('/home/runner/work/News/News/newshin.mp4')
 
 response_upload = service.videos().insert(
     part='snippet,status',
