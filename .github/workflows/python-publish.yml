@@ -36,6 +36,7 @@ jobs:
           pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
           pip install google-auth
           pip install schedule
+          pip install gnewsclient
           
       - name: execute py script # run sj-gobierno.py to get the latest data
         env: 
@@ -50,7 +51,8 @@ jobs:
           git config --local user.name "rraj1572"
           git clone https://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@github.com/rraj1572/News
           cd News/
-          cd code_samples
+          chmod 755 *
+          sudo apt-get install expect -y
           git add -A
           git commit -m "update data" -a
           
