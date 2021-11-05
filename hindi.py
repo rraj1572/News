@@ -86,7 +86,7 @@ spon= 'For Advertisement Contact : newsproviderindia@gmail.com'
 request_body = {
     'snippet': {
         'categoryI': 19,
-        'title': title+dt_string,
+        'title': title+dt_string+' UTC',
         'description': desc+'         '+spon,
         'tags': ['News', 'Headlines', 'India']
     },
