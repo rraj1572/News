@@ -36,12 +36,13 @@ jobs:
           pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
           pip install google-auth
           
-      - name: execute py script # run the run.py to get the latest data
-            run: |
-              python main.py
-            env:
-              key: ${{ secrets.key }}
-          
+      - name: execute py script # run sj-gobierno.py to get the latest data
+        env: 
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+        run: main.py
+        
       - name: commit files
         run: |
           git config --local user.email "rishabhpao2012@gmail.com"
