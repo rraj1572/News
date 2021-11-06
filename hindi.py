@@ -80,7 +80,7 @@ dt_string = now.strftime("%d/%m/%Y,%I:%M %p")
 
 service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 title = 'Hindi News (भारत)- '
-desc = "ख़बर 1:"+News1+", ख़बर 2:"+News2+", ख़बर 3:"+News3+", ख़बर 4:"+News4+", ख़बर 5:"+News5+", ख़बर 6:"+News6+", ख़बर 7:"+News7+", ख़बर 8:"+News8+", ख़बर 9:"+News9+", ख़बर 10:"+News10+"................."+"Automatically Generated..."
+desc = "ख़बर 1:"+News1+"\nख़बर 2:"+News2+"\nख़बर 3:"+News3+"\nख़बर 4:"+News4+"\nख़बर 5:"+News5+"\nख़बर 6:"+News6+"\nख़बर 7:"+News7+"\nख़बर 8:"+News8+"\nख़बर 9:"+News9+"\nख़बर 10:"+News10+"\nAutomatically Generated..."
 spon= 'For Advertisement Contact : newsproviderindia@gmail.com'
 
 request_body = {
