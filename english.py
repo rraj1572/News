@@ -149,7 +149,7 @@ def eng():
 
         service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
         title = 'News Headlines (India)- '
-        desc = 'News 1:'+News1+', News 2:'+News2+', News 3:'+News3+', News 4:'+News4+', News 5:'+News5+', News 6:'+News6+', News 7:'+News7+', News 8:'+News8+', News 9:'+News9+', News 10:'+News10+'...............................'+'Automatically Generated'
+        desc = 'News 1:'+News1+'\nNews 2:'+News2+'\nNews 3:'+News3+'\nNews 4:'+News4+'\nNews 5:'+News5+'\nNews 6:'+News6+'\nNews 7:'+News7+'\nNews 8:'+News8+'\nNews 9:'+News9+'\nNews 10:'+News10+'\nAutomatically Generated'
         spon= 'For Advertisement Contact : newsproviderindia@gmail.com'
 
         request_body = {
@@ -182,7 +182,7 @@ def eng():
 
         service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
         title = 'News Headlines (India)- '
-        desc = 'News 1:'+News1+', News 2:'+News2+', News 3:'+News3+', News 4:'+News4+', News 5:'+News5+', News 6:'+News6+', News 7:'+News7+', News 8:'+News8+'...............................'+'Automatically Generated'
+        desc = 'News 1:'+News1+'\nNews 2:'+News2+'\nNews 3:'+News3+'\nNews 4:'+News4+'\nNews 5:'+News5+'\nNews 6:'+News6+'\nNews 7:'+News7+'\nNews 8:'+News8+'\nAutomatically Generated'
         spon= 'For Advertisement Contact : newsproviderindia@gmail.com'
 
         request_body = {
