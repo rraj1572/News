@@ -37,6 +37,7 @@ jobs:
           pip install google-auth
           pip install schedule
           pip install gnewsclient
+          pip install pytz
           
       - name: execute py script # run sj-gobierno.py to get the latest data
         env: 
