@@ -159,7 +159,7 @@ def eng():
         request_body = {
             'snippet': {
                 'categoryI': 19,
-                'title': title+dt_string+' UTC',
+                'title': title+dt_string+' GMT+5:30',
                 'description': desc+spon,
                 'tags': ['News', 'Headlines', 'India']
             },
@@ -192,7 +192,7 @@ def eng():
         request_body = {
             'snippet': {
                 'categoryI': 19,
-                'title': title+dt_string+' UTC',
+                'title': title+dt_string+' GMT+5:30',
                 'description': desc+spon,
                 'tags': ['News', 'Headlines', 'India']
             },
