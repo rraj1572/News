@@ -8,9 +8,11 @@ API_VERSION = 'v3'
 SCOPES = ['https://www.googleapis.com/auth/youtube.upload']
 
 from datetime import datetime
+import pytz
 
 # datetime object containing current date and time
-now = datetime.now()
+IST = pytz.timezone('Asia/Kolkata')
+datetime_ist = datetime.now(IST)
 
 
 
@@ -76,7 +78,7 @@ clip2.write_videofile("/home/runner/work/News/News/newshin.mp4", fps=24)
 
 
 # dd/mm/YY H:M:S
-dt_string = now.strftime("%d/%m/%Y,%I:%M %p")
+dt_string = datetime_ist.strftime("%d/%m/%Y,%I:%M %p")
 
 service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
 title = 'Hindi News (भारत)- '
