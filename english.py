@@ -8,6 +8,7 @@ import os
 from moviepy.editor import *
 import time
 import schedule
+import pytz
 
 
 
@@ -22,7 +23,10 @@ def eng():
 
 
 # datetime object containing current date and time
-    now = datetime.now()
+    UTC = pytz.utc
+
+    IST = pytz.timezone('Asia/Kolkata')
+    datetime_ist = datetime.now(IST)
 
 
 
@@ -145,7 +149,7 @@ def eng():
 
 
     try:        # dd/mm/YY H:M:S
-        dt_string = now.strftime("%d/%m/%Y,%I:%M %p")
+        dt_string = datetime_ist.strftime("%d/%m/%Y,%I:%M %p")
 
         service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
         title = 'News Headlines (India)- '
@@ -178,7 +182,7 @@ def eng():
         print("Only 8 news available...")
         print("")
         print("")
-        dt_string = now.strftime("%d/%m/%Y,%I:%M %p")
+        dt_string = datetime_ist.strftime("%d/%m/%Y,%I:%M %p")
 
         service = Create_Service(CLIENT_SECRET_FILE, API_NAME, API_VERSION, SCOPES)
         title = 'News Headlines (India)- '
