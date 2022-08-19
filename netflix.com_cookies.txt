@@ -2,7 +2,6 @@
 # http://curl.haxx.se/rfc/cookie_spec.html
 # This is a generated file!  Do not edit.
 
-secured.netflix.com	FALSE	/	TRUE	1704809429	thx_guid	966c16362d284788a8a787ac745c8fb4
 .netflix.com	TRUE	/	FALSE	1668692297	netflix-sans-normal-3-loaded	true
 .netflix.com	TRUE	/	FALSE	1706770879	_ga	GA1.2.671898609.1643698879
 .netflix.com	TRUE	/	FALSE	1668692297	netflix-sans-bold-3-loaded	true
